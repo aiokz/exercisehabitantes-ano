@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	
+	int A = 50000, B = 200000, i = 0;
+	float taxaA = 0.03, taxaB = 0.015;
+	
+	while (A < B){
+	    A += (A * taxaA);
+	    B += (B * taxaB);
+	    i++;
+	}
+	printf("Sao necessarios %d anos para que a populacao do pais a ultrapasse a populacao do pais B", i);
+}
